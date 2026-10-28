@@ -1,0 +1,1089 @@
+[gd_scene load_steps=38 format=3 uid="uid://ddphoefnrf6a8"]
+
+[ext_resource type="Script" path="res://stages/menu.gd" id="1_8wgnh"]
+[ext_resource type="Texture2D" uid="uid://dvklun6rq5eyf" path="res://sprites/jasy/jasyidle/pixil-frame-0.png" id="2_ow63w"]
+[ext_resource type="Texture2D" uid="uid://q0veeg1b1srd" path="res://sprites/jasy/jasywalk/pixil-frame-2.png" id="3_rdh2e"]
+[ext_resource type="Texture2D" uid="uid://cr1351yi6djtf" path="res://sprites/jasy/jasydash/pixil-frame-2.png" id="4_i27um"]
+[ext_resource type="Texture2D" uid="uid://dw1hbkoujh3vd" path="res://sprites/jasy/jasyslap/pixil-frame-3.png" id="5_c8tkh"]
+[ext_resource type="Texture2D" uid="uid://b1t3448esxpbs" path="res://sprites/jasy/jasyaltslap/pixil-frame-4.png" id="6_ff44b"]
+[ext_resource type="Texture2D" uid="uid://dew5ekf8bedw7" path="res://sprites/jasy/jasycane/pixil-frame-3.png" id="7_qvy5f"]
+[ext_resource type="Texture2D" uid="uid://24n6xhadnhqm" path="res://sprites/jasy/jasyhurt/pixil-frame-2.png" id="8_kkcr4"]
+[ext_resource type="Texture2D" uid="uid://cqa404ctajvou" path="res://sprites/pickups/chipa.png" id="9_asepb"]
+[ext_resource type="Texture2D" uid="uid://vunllj1cr0gr" path="res://sprites/pickups/codico.png" id="10_jnyxw"]
+[ext_resource type="Texture2D" uid="uid://cun08wcyx0olt" path="res://sprites/pickups/sopa.png" id="11_ainry"]
+[ext_resource type="Texture2D" uid="uid://cvvdhblurwrcw" path="res://sprites/pickups/terere.png" id="12_mbuyl"]
+[ext_resource type="Texture2D" uid="uid://yd043c0tok76" path="res://sprites/football/fhurt/pixil-frame-0.png" id="13_b1qvv"]
+[ext_resource type="Texture2D" uid="uid://bkhrmwxp3wav4" path="res://sprites/jasy/jasyslap/pixil-frame-2.png" id="14_ess0p"]
+[ext_resource type="Texture2D" uid="uid://dvvn5ck7g6ohy" path="res://sprites/football/fkick/pixil-frame-4.png" id="15_0lyfx"]
+[ext_resource type="Texture2D" uid="uid://c152a56uifio4" path="res://sprites/football/fheadbutt/pixil-frame-5.png" id="16_68xq3"]
+[ext_resource type="Texture2D" uid="uid://gvd584vxlflv" path="res://sprites/jasy/jasyaoe/pixil-frame-2.png" id="17_yh3qv"]
+[ext_resource type="Texture2D" uid="uid://dx8sd5xh2jgtu" path="res://sprites/football/fhurt/pixil-frame-1.png" id="18_gmx4v"]
+[ext_resource type="Texture2D" uid="uid://cq5ai6p15ww47" path="res://sprites/jasy/jasydash/pixil-frame-1.png" id="19_figpg"]
+[ext_resource type="Texture2D" uid="uid://blb6eopsjqd75" path="res://sprites/lynx/bullet.png" id="20_ia2vv"]
+[ext_resource type="Texture2D" uid="uid://b5kscvq54i0su" path="res://sprites/lynx/lynxgun/pixil-frame-3.png" id="21_tp2cm"]
+[ext_resource type="Script" path="res://stages/glosario.gd" id="22_yia1d"]
+[ext_resource type="Texture2D" uid="uid://c231gbw6iedfe" path="res://sprites/pickups/vori.png" id="23_6iulm"]
+[ext_resource type="Texture2D" uid="uid://dif8x1ppmmw7w" path="res://sprites/football/fidle/pixil-frame-0.png" id="23_afp2w"]
+[ext_resource type="Texture2D" uid="uid://c3fog1q2ggski" path="res://sprites/glosario/tuke1.jpeg" id="23_fyl5w"]
+[ext_resource type="Texture2D" uid="uid://cao76nlmd0osh" path="res://sprites/panza/idle/pixil-frame-0.png" id="24_qrmvu"]
+[ext_resource type="Texture2D" uid="uid://dltxenp0gkd33" path="res://sprites/glosario/tuke2.jpeg" id="24_vetes"]
+[ext_resource type="Texture2D" uid="uid://bpo5hu7biset2" path="res://sprites/piri/idle/pixil-frame-0.png" id="25_2jnkj"]
+[ext_resource type="Texture2D" uid="uid://oe6wrndhg0w2" path="res://sprites/glosario/tuke3.jpeg" id="25_anna8"]
+[ext_resource type="Texture2D" uid="uid://drhwtx6yjy3ha" path="res://sprites/glosario/tuke4.jpeg" id="26_7bcnv"]
+[ext_resource type="Texture2D" uid="uid://b2eoqc2p835ld" path="res://sprites/pyche/walk/pixil-frame-0.png" id="26_wsqkx"]
+[ext_resource type="Texture2D" uid="uid://biouo45f5vu2p" path="res://sprites/lynx/lynxidle/pixil-frame-0.png" id="27_q2p3r"]
+[ext_resource type="Texture2D" uid="uid://dsnc6xgtq8e3h" path="res://sprites/glosario/tuke5.jpeg" id="27_wmd1w"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yhhro"]
+font_size = 40
+font_color = Color(1, 1, 0, 1)
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ke5ya"]
+font_size = 40
+font_color = Color(0.772253, 0.793411, 0, 1)
+shadow_size = 50
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(2, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_26xnn"]
+font_size = 20
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3sxuv"]
+font_size = 15
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8wgnh")
+
+[node name="Language" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 695.0
+offset_top = 503.0
+offset_right = 735.0
+offset_bottom = 543.0
+
+[node name="Esp" type="Button" parent="Language"]
+layout_mode = 0
+offset_left = -505.0
+offset_top = -207.0
+offset_right = -218.0
+offset_bottom = -144.0
+theme_override_font_sizes/font_size = 40
+text = "Español"
+
+[node name="En" type="Button" parent="Language"]
+layout_mode = 0
+offset_top = -207.0
+offset_right = 284.0
+offset_bottom = -144.0
+theme_override_font_sizes/font_size = 40
+text = "English"
+
+[node name="Main" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_left = 695.0
+offset_top = 503.0
+offset_right = 735.0
+offset_bottom = 543.0
+
+[node name="Play" type="Button" parent="Main"]
+layout_mode = 0
+offset_left = -505.0
+offset_right = -259.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 40
+text = "main_btn_play"
+
+[node name="Glossary" type="Button" parent="Main"]
+layout_mode = 0
+offset_left = -252.0
+offset_right = -6.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 40
+text = "main_btn_gloss"
+
+[node name="Quit" type="Button" parent="Main"]
+layout_mode = 0
+offset_right = 246.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 40
+text = "main_btn_quit"
+
+[node name="Label" type="Label" parent="Main"]
+layout_mode = 0
+offset_left = -423.0
+offset_top = -414.0
+offset_right = 162.0
+offset_bottom = -232.0
+text = "main_title"
+label_settings = SubResource("LabelSettings_yhhro")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HowToPlay1" type="Control" parent="."]
+visible = false
+z_index = 3
+layout_mode = 3
+anchors_preset = 0
+offset_left = 336.0
+offset_top = 545.0
+offset_right = 376.0
+offset_bottom = 585.0
+
+[node name="Title" type="Label" parent="HowToPlay1"]
+light_mask = 0
+layout_mode = 0
+offset_left = -8.0
+offset_top = -536.0
+offset_right = 488.0
+offset_bottom = -446.0
+text = "main_howto_title1"
+label_settings = SubResource("LabelSettings_ke5ya")
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Panel1" type="Panel" parent="HowToPlay1"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 35.16
+offset_top = 77.96
+offset_right = -626.48
+offset_bottom = -401.28
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToPlay1/Panel1"]
+position = Vector2(72, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("2_ow63w")
+
+[node name="Sprite2D2" type="Sprite2D" parent="HowToPlay1/Panel1"]
+position = Vector2(238, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("3_rdh2e")
+
+[node name="Sprite2D3" type="Sprite2D" parent="HowToPlay1/Panel1"]
+position = Vector2(398, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("4_i27um")
+
+[node name="Label1" type="Label" parent="HowToPlay1"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 27.08
+offset_top = 240.12
+offset_right = -626.72
+offset_bottom = -315.2
+text = "main_howto_tip1"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Panel2" type="Panel" parent="HowToPlay1"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 630.16
+offset_top = 77.96
+offset_right = -31.48
+offset_bottom = -401.28
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToPlay1/Panel2"]
+position = Vector2(39, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("5_c8tkh")
+
+[node name="Sprite2D2" type="Sprite2D" parent="HowToPlay1/Panel2"]
+position = Vector2(172, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("6_ff44b")
+
+[node name="Sprite2D3" type="Sprite2D" parent="HowToPlay1/Panel2"]
+position = Vector2(299, 63)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("7_qvy5f")
+
+[node name="Label2" type="Label" parent="HowToPlay1"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 622.08
+offset_top = 240.12
+offset_right = -31.7201
+offset_bottom = -322.2
+text = "main_howto_tip2"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Panel3" type="Panel" parent="HowToPlay1"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 35.16
+offset_top = 321.96
+offset_right = -626.48
+offset_bottom = -157.28
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToPlay1/Panel3"]
+position = Vector2(72, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("8_kkcr4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="HowToPlay1/Panel3"]
+position = Vector2(334.6, 47.65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("9_asepb")
+
+[node name="Sprite2D3" type="Sprite2D" parent="HowToPlay1/Panel3"]
+position = Vector2(399, 100)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("10_jnyxw")
+
+[node name="Sprite2D4" type="Sprite2D" parent="HowToPlay1/Panel3"]
+position = Vector2(303.6, 121)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("11_ainry")
+
+[node name="Sprite2D5" type="Sprite2D" parent="HowToPlay1/Panel3"]
+position = Vector2(235.8, 74)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("12_mbuyl")
+
+[node name="Label3" type="Label" parent="HowToPlay1"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 27.08
+offset_top = 484.12
+offset_right = -626.72
+offset_bottom = -71.2
+text = "main_howto_tip3"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Next" type="Button" parent="HowToPlay1"]
+layout_mode = 0
+offset_left = 413.0
+offset_top = -200.0
+offset_right = 659.0
+offset_bottom = -137.0
+theme_override_font_sizes/font_size = 40
+text = "main_btn_next"
+
+[node name="Menu" type="Button" parent="HowToPlay1"]
+layout_mode = 0
+offset_left = 413.0
+offset_top = -107.0
+offset_right = 659.0
+offset_bottom = -44.0
+theme_override_font_sizes/font_size = 40
+text = "MENU"
+
+[node name="HowToPlay2" type="Control" parent="."]
+visible = false
+z_index = 3
+layout_mode = 3
+anchors_preset = 0
+offset_left = 336.0
+offset_top = 545.0
+offset_right = 376.0
+offset_bottom = 585.0
+
+[node name="Title" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 0
+offset_left = -8.0
+offset_top = -536.0
+offset_right = 488.0
+offset_bottom = -446.0
+text = "main_howto_title2"
+label_settings = SubResource("LabelSettings_ke5ya")
+horizontal_alignment = 1
+uppercase = true
+
+[node name="Panel1" type="Panel" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 35.16
+offset_top = 77.96
+offset_right = -626.48
+offset_bottom = -401.28
+
+[node name="Sprite2D2" type="Sprite2D" parent="HowToPlay2/Panel1"]
+position = Vector2(202, 81)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("13_b1qvv")
+flip_h = true
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToPlay2/Panel1"]
+position = Vector2(72, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("14_ess0p")
+
+[node name="Label1" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 24.08
+offset_top = 240.12
+offset_right = -629.72
+offset_bottom = -315.2
+text = "main_howto_tip4"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Combo" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 313.08
+offset_top = 105.12
+offset_right = -681.72
+offset_bottom = -439.2
+text = "x10 COMBO
++ MANA
++ Gs."
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Panel2" type="Panel" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 630.16
+offset_top = 77.96
+offset_right = -31.48
+offset_bottom = -401.28
+
+[node name="Sprite2D2" type="Sprite2D" parent="HowToPlay2/Panel2"]
+position = Vector2(91.15, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("8_kkcr4")
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToPlay2/Panel2"]
+position = Vector2(82.35, 81)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("15_0lyfx")
+
+[node name="Sprite2D3" type="Sprite2D" parent="HowToPlay2/Panel2"]
+position = Vector2(166.35, 83)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("16_68xq3")
+flip_h = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="HowToPlay2/Panel2"]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(338.8, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("17_yh3qv")
+
+[node name="Sprite2D5" type="Sprite2D" parent="HowToPlay2/Panel2"]
+position = Vector2(436.8, 81)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("18_gmx4v")
+
+[node name="Sprite2D6" type="Sprite2D" parent="HowToPlay2/Panel2"]
+position = Vector2(283, 82)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("18_gmx4v")
+flip_h = true
+
+[node name="Label2" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 622.08
+offset_top = 240.12
+offset_right = -31.7201
+offset_bottom = -322.2
+text = "main_howto_tip5"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Arrow" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 817.08
+offset_top = 131.12
+offset_right = -276.72
+offset_bottom = -475.2
+text = "=>"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Panel3" type="Panel" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 630.16
+offset_top = 320.96
+offset_right = -31.48
+offset_bottom = -158.28
+
+[node name="Sprite2D" type="Sprite2D" parent="HowToPlay2/Panel3"]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(141, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("19_figpg")
+
+[node name="Sprite2D2" type="Sprite2D" parent="HowToPlay2/Panel3"]
+position = Vector2(153, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("20_ia2vv")
+
+[node name="Sprite2D5" type="Sprite2D" parent="HowToPlay2/Panel3"]
+position = Vector2(60, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("20_ia2vv")
+
+[node name="Sprite2D4" type="Sprite2D" parent="HowToPlay2/Panel3"]
+position = Vector2(253, 64)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("20_ia2vv")
+
+[node name="Sprite2D3" type="Sprite2D" parent="HowToPlay2/Panel3"]
+position = Vector2(398, 65)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("21_tp2cm")
+flip_h = true
+
+[node name="Label3" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 622.08
+offset_top = 483.12
+offset_right = -31.7201
+offset_bottom = -79.2
+text = "main_howto_tip6"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="?" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 1011.08
+offset_top = 310.12
+offset_right = -82.7201
+offset_bottom = -296.2
+text = "?"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="Label4" type="Label" parent="HowToPlay2"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = -4.91998
+offset_top = 610.12
+offset_right = 0.279907
+offset_bottom = 3.79999
+text = "main_howto_tip7"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+uppercase = true
+
+[node name="EnterLevel" type="Button" parent="HowToPlay2"]
+layout_mode = 0
+offset_left = -185.0
+offset_top = -200.0
+offset_right = 61.0
+offset_bottom = -137.0
+theme_override_font_sizes/font_size = 40
+text = "main_btn_play"
+
+[node name="Menu" type="Button" parent="HowToPlay2"]
+layout_mode = 0
+offset_left = -185.0
+offset_top = -107.0
+offset_right = 61.0
+offset_bottom = -44.0
+theme_override_font_sizes/font_size = 40
+text = "MENU"
+
+[node name="Glosario" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("22_yia1d")
+
+[node name="Title" type="Label" parent="Glosario"]
+light_mask = 0
+layout_mode = 0
+offset_left = 30.0
+offset_top = 579.0
+offset_right = 792.0
+offset_bottom = 669.0
+text = "gloss_label_title"
+label_settings = SubResource("LabelSettings_ke5ya")
+uppercase = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Glosario"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 427.0
+offset_right = 302.0
+offset_bottom = 563.0
+
+[node name="Characters" type="Button" parent="Glosario/VBoxContainer"]
+layout_mode = 2
+text = "gloss_btn_char"
+
+[node name="Pickups" type="Button" parent="Glosario/VBoxContainer"]
+layout_mode = 2
+text = "gloss_btn_pick"
+
+[node name="Stages" type="Button" parent="Glosario/VBoxContainer"]
+layout_mode = 2
+text = "gloss_btn_stag"
+
+[node name="Intro" type="Button" parent="Glosario/VBoxContainer"]
+layout_mode = 2
+text = "gloss_btn_intr"
+
+[node name="Characters" type="Control" parent="Glosario"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Jasy" type="Panel" parent="Glosario/Characters"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 365.16
+offset_top = 573.96
+offset_right = -428.48
+offset_bottom = 94.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Characters/Jasy"]
+position = Vector2(50, 72)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("2_ow63w")
+
+[node name="Label" type="Label" parent="Glosario/Characters/Jasy"]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 4.0
+offset_right = 357.0
+offset_bottom = 158.0
+text = "gloss_char_text2"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Olimpio" type="Panel" parent="Glosario/Characters"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 365.16
+offset_top = 765.96
+offset_right = -428.48
+offset_bottom = 286.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Characters/Olimpio"]
+position = Vector2(46, 82)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("23_afp2w")
+
+[node name="Label" type="Label" parent="Glosario/Characters/Olimpio"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 7.0
+offset_right = 352.0
+offset_bottom = 161.0
+text = "gloss_char_text3"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="GTere" type="Panel" parent="Glosario/Characters"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 743.16
+offset_top = 573.96
+offset_right = -50.48
+offset_bottom = 94.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Characters/GTere"]
+position = Vector2(75, 66)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("24_qrmvu")
+
+[node name="Label" type="Label" parent="Glosario/Characters/GTere"]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 4.0
+offset_right = 351.0
+offset_bottom = 158.0
+text = "gloss_char_text4"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Piri" type="Panel" parent="Glosario/Characters"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 743.16
+offset_top = 765.96
+offset_right = -50.48
+offset_bottom = 286.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Characters/Piri"]
+position = Vector2(47, 75)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("25_2jnkj")
+
+[node name="Label" type="Label" parent="Glosario/Characters/Piri"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 2.0
+offset_right = 350.0
+offset_bottom = 163.0
+text = "gloss_char_text5"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Pyche" type="Panel" parent="Glosario/Characters"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 1122.16
+offset_top = 573.96
+offset_right = 328.52
+offset_bottom = 94.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Characters/Pyche"]
+position = Vector2(61, 78)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("26_wsqkx")
+
+[node name="Label" type="Label" parent="Glosario/Characters/Pyche"]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 8.0
+offset_right = 358.0
+offset_bottom = 156.0
+text = "gloss_char_text6"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Lynx" type="Panel" parent="Glosario/Characters"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 1122.16
+offset_top = 765.96
+offset_right = 328.52
+offset_bottom = 286.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Characters/Lynx"]
+position = Vector2(41, 67)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("27_q2p3r")
+
+[node name="Label" type="Label" parent="Glosario/Characters/Lynx"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 2.0
+offset_right = 350.0
+offset_bottom = 161.0
+text = "gloss_char_text7"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label1" type="Label" parent="Glosario/Characters"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 654.08
+offset_top = 992.12
+offset_right = 327.28
+offset_bottom = 466.8
+text = "gloss_char_text1"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Pickups" type="Control" parent="Glosario"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label1" type="Label" parent="Glosario/Pickups"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 654.08
+offset_top = 997.12
+offset_right = 327.28
+offset_bottom = 471.8
+text = "gloss_pick_text1"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Chipa" type="Panel" parent="Glosario/Pickups"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 365.16
+offset_top = 573.96
+offset_right = -428.48
+offset_bottom = 94.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Pickups/Chipa"]
+position = Vector2(46, 82)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("9_asepb")
+
+[node name="Label" type="Label" parent="Glosario/Pickups/Chipa"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 4.0
+offset_right = 352.0
+offset_bottom = 158.0
+text = "gloss_pick_text2"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Sopa" type="Panel" parent="Glosario/Pickups"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 365.16
+offset_top = 765.96
+offset_right = -428.48
+offset_bottom = 286.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Pickups/Sopa"]
+position = Vector2(46, 82)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("11_ainry")
+
+[node name="Label" type="Label" parent="Glosario/Pickups/Sopa"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 4.0
+offset_right = 352.0
+offset_bottom = 158.0
+text = "gloss_pick_text3"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Vori" type="Panel" parent="Glosario/Pickups"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 750.16
+offset_top = 573.96
+offset_right = -43.48
+offset_bottom = 94.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Pickups/Vori"]
+position = Vector2(46, 82)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("23_6iulm")
+
+[node name="Label" type="Label" parent="Glosario/Pickups/Vori"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 4.0
+offset_right = 352.0
+offset_bottom = 158.0
+text = "gloss_pick_text4"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Tere" type="Panel" parent="Glosario/Pickups"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 750.16
+offset_top = 765.96
+offset_right = -43.48
+offset_bottom = 286.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Pickups/Tere"]
+position = Vector2(41, 82)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("12_mbuyl")
+
+[node name="Label" type="Label" parent="Glosario/Pickups/Tere"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 2.0
+offset_right = 350.0
+offset_bottom = 159.0
+text = "gloss_pick_text5"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Cocido" type="Panel" parent="Glosario/Pickups"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.379
+anchor_top = -13.599
+anchor_right = 20.312
+anchor_bottom = 2.457
+offset_left = 1120.16
+offset_top = 681.96
+offset_right = 326.52
+offset_bottom = 202.72
+
+[node name="Sprite2D" type="Sprite2D" parent="Glosario/Pickups/Cocido"]
+position = Vector2(46, 82)
+scale = Vector2(4.3, 4.3)
+texture = ExtResource("10_jnyxw")
+
+[node name="Label" type="Label" parent="Glosario/Pickups/Cocido"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 4.0
+offset_right = 352.0
+offset_bottom = 158.0
+text = "gloss_pick_text6"
+label_settings = SubResource("LabelSettings_3sxuv")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Stages" type="Control" parent="Glosario"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label1" type="Label" parent="Glosario/Stages"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 660.08
+offset_top = 967.12
+offset_right = 298.28
+offset_bottom = 449.8
+text = "gloss_stag_text1"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Tuke1" type="Sprite2D" parent="Glosario/Stages"]
+position = Vector2(203, 121)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("23_fyl5w")
+
+[node name="Tuke2" type="Sprite2D" parent="Glosario/Stages"]
+position = Vector2(203, 309)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("24_vetes")
+
+[node name="Tuke3" type="Sprite2D" parent="Glosario/Stages"]
+position = Vector2(537, 121)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("25_anna8")
+
+[node name="Tuke4" type="Sprite2D" parent="Glosario/Stages"]
+position = Vector2(536, 310)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("26_7bcnv")
+
+[node name="Tuke5" type="Sprite2D" parent="Glosario/Stages"]
+position = Vector2(929, 218)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("27_wmd1w")
+
+[node name="Intro" type="Control" parent="Glosario"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label1" type="Label" parent="Glosario/Intro"]
+light_mask = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -8.152
+anchor_top = -13.453
+anchor_right = 20.268
+anchor_bottom = 2.405
+offset_left = 784.08
+offset_top = 738.12
+offset_right = 303.28
+offset_bottom = 354.8
+text = "gloss_intro_text1"
+label_settings = SubResource("LabelSettings_26xnn")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="Language/Esp" to="." method="_on_esp_pressed"]
+[connection signal="pressed" from="Language/En" to="." method="_on_en_pressed"]
+[connection signal="pressed" from="Main/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Main/Glossary" to="." method="_on_glossary_pressed"]
+[connection signal="pressed" from="Main/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="HowToPlay1/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="HowToPlay1/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="HowToPlay2/EnterLevel" to="." method="_on_enter_level_pressed"]
+[connection signal="pressed" from="HowToPlay2/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Glosario/VBoxContainer/Characters" to="Glosario" method="_on_characters_pressed"]
+[connection signal="pressed" from="Glosario/VBoxContainer/Pickups" to="Glosario" method="_on_pickups_pressed"]
+[connection signal="pressed" from="Glosario/VBoxContainer/Stages" to="Glosario" method="_on_stages_pressed"]
+[connection signal="pressed" from="Glosario/VBoxContainer/Intro" to="Glosario" method="_on_intro_pressed"]

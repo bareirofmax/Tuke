@@ -1,0 +1,88 @@
+﻿keys;es;en
+main_btn_play;JUGAR;PLAY
+main_btn_gloss;GLOSARIO;GLOSSARY
+main_btn_quit;SALIR;QUIT
+main_btn_next;SIGUIENTE;NEXT
+main_howto_title1;COMO JUGAR TUKE 1;HOW TO PLAY TUKE 1
+main_howto_title2;COMO JUGAR TUKE 2;HOW TO PLAY TUKE 2
+main_howto_tip1;UTILIZA LOS ARROW KEYS PARA MOVERTE. APRETALAS 2 VECES PARA INICIAR UN DASH.;USE THE ARROW KEYS TO MOVE. DOUBLE TAP TO DASH.
+main_howto_tip2;Utiliza X y C para atacar. Combina botones para hacer diferentes ataques.;Press X and C to attack. Combine buttons for different attacks.
+main_howto_tip3;COME COMIDA PARA CURARTE. DIFERENTES ALIMENTOS TIENEN DIFERENTES EFECTOS.;Eat food to heal. Different foods have different effects.
+main_howto_tip4;CIERTOS MOVIMIENTOS REQUIEREN MANÁ. MANTÉN COMBOS PARA GANAR MANÁ Y DINERO.;Certain moves may require mana. Maintain combos to gain mana and money
+main_howto_tip5;UTILIZA MOVIMIENTOS DEFENSIVOS PARA ESCAPAR DE SITUACIONES ABRUMANTES.;Use defensive moves to escape tough situations.
+main_howto_tip6;LOS MOVIMIENTOS QUE TE HACEN CELESTE SON INVULNERABLES.;Moves that turn you light blue are invulnerable.
+main_howto_tip7;CONSULTA EL MENÚ DE PAUSA EN EL JUEGO (ESC) PARA CONOCER MÁS ATAQUES Y MOVIMIENTOS;Consult the pause menu (ESC) to learn more about moves and combos.
+gloss_btn_char;PERSONAJES;CHARACTERS
+gloss_btn_pick;PICKUPS;PICKUPS
+gloss_btn_stag;ESCENARIO;STAGE
+gloss_btn_intr;INTRO;INTRO
+gloss_label_title;BIENVENIDOS AL GLOSARIO;WELCOME TO THE GLOSSARY
+gloss_intro_text1;QUÉ SIGNIFICA TUKE?\nTuke es una palabra en guaraní que se refiere a un golpe dado en la cabeza, generalmente con el puño cerrado. Es usado de manera coloquial entre hermanos o amigos cuando se pelean. Me pareció una palabra apropiada y chistosa para titular el juego. Para navegar el glosario favor apretar los botones a la izquierda. \n\nApreta ESC para regresar al menu principal.;"WHAT IS A ""TUKE""?\nTuke is a guaraní (second langauge in Paraguay) word that refers to hitting someone in the head, generally with a closed fist. It is used colloquially among friends or family when they fight. I thought it was a both a funny and appropiate word to title the game. To navigate the glossary, press the buttons to the left.\n\nPress ESC to go back to the main menu."
+gloss_stag_text1;El nivel está inspirado en la Costanera de Asunción. Ubicado en la ribera del río Paraguay en la capital, se la considera una de las zonas  más emblemáticas de la ciudad. Para Tuke, fui tomar unas fotos de esta como referencia, las cuales pueden ver arriba. ;"The stage is inspired on the Asunción ""Costanera"". Located at the coast of the Paraguay River in the capital, it is considered one of the city's most emblematic areas. For Tuke, I went to take some photos of it as a reference, which you can see above."
+gloss_pick_text1;Todos los pickups del juego estan basados en alimentos de la gastonomía paraguaya. Arriba detallo los incluidos en el juego.;All pickups in the game are based on different dishes from Paraguayan cuisine. Above, you can read more on those included in Tuke. 
+gloss_pick_text2;Chipa: Alimento tradicional elaborado con almidón de mandioca, queso, huevos y grasa o manteca. Posiblemente el platillo paraguayo más famoso.;Chipa: Traditional snack made from cassava starch, cheese, eggs and butter or pork fat. Possibly the most famous Paraguayn dish.
+gloss_pick_text3;"Sopa Paraguaya: Se prepara con harina de maíz, queso, cebolla, huevos y leche. A pesar de ser  ""sopa"", es sólida y esponjosa.";"Sopa Paraguaya: Prepared from corn, cheese, onion, eggs and milk. Even though it is ""sopa"" or soup, it is solid and spongy."
+gloss_pick_text4;Vorí vorí: Caldo de pollo o carne preparado con pequeñas bolitas de harina de maíz y queso (llamadas vorís).;Vorí vorí: Chicken or meat broth prepared with small balls of cornmeal and chesse (named vorís).
+gloss_pick_text5;Tereré: Bebida similar al mate, pero la yerba es servida con agua fría y otras hierbas medicinales para que sea refrecante. Los paraguayos la llevan todo el tiempo en una guampa con su termo.;Tereré: Beverage similar to mate, but the yerba is served with cold water and herbal medicine to be refreshing. Paraguayan always have it on standby on a guampa along with their thermos.
+gloss_pick_text6;Cocido Quemado: Bebida caliente de  yerba mate tostada, agua y azúcar. Puede servirse con leche y acompañada de chipa.;Cocido Quemado: Hot beverage composed of toasted yerba mate herbs, water and sugar. Usually served with milk or along with chipa.
+gloss_char_text1;Todos los personajes están basados en diferentes aspectos relacionados al Paraguay en general. Arriba se detallan los incuidos en el juego.;All characters are based on different aspects related to Paraguay in general. Above, you can read on the characters included ingame.
+gloss_char_text2;Jasy: El personaje jugable está basado en uno de los mitos más famosos del Paraguay. El Jasy Jatere es conocido por sus rizos dorados, su bastón y sus hipnotizante silbido.;Jasy: The playable character is based on one of the most famous myths of Paraguayan folklore. The Jasy Jatere is known for its blonde curly hair, his cane and his hypnotizing whistling.
+gloss_char_text3;Olimpio: Inspirado en la fama del futbol en Paraguay. Los diferentes colores de las remeras representan diferentes clubes nacionales.;Olimpio: Inspired by the influence of football/soccer in Paraguay. The different color variants represent different national clubs.
+gloss_char_text4;Panza: Basado en todas las personas que van con la calle con su termo y su guampa. No somos todos necesariamente gordos.;Panza: Based on all the people who walk the streets with their tereré thermos. We are not all necessarily fat though.
+gloss_char_text5;"Piri: Lleva el atuendo típico del ""paraguayito"": una camisa blanca, una faja tricolor, su pañuelo y el sombrero piri (de donde proviene el hombre del enemigo).";"Piri: Wears the tradtional ""paraguayito"" attire: a white shirt, a tricolor sash, a neckerchief and the famous ""sombrero piri"" or piri hat (from which his name comes from)."
+gloss_char_text6;"Pyche: Lleva el atuendo tradicional de la ""paraguayita"": la blusa typói, la falda y la faja tricolor; sin zapatos. Su nombre referencia el paso de baile típico ""Py Cheche"".";"Pyche: Wear the traditional ""paraguayita"" attire: the typói blouse, the skirt and the tricolor sash; while barefoot. Her name is a reference to the traditional dance ""Py Cheche""."
+gloss_char_text7;"Lynx: Enemigo inspirado en el grupo policial paraguayo ""Lince"". El nombre de sus variantes referencian otros animales.";"Lynx: Enemy inspired by the Paraguayan ""Lince"" police unit, which translates to lynx in spanish. The names of its variants reference other animals."
+game_pause_title;PAUSA!;PAUSE!
+game_pause_text1;"[u]LISTA DE MOVIMIENTOS:[/u]\n
+[u]*NORMALES*[/u]
+-DOBLE TAP DE LAS DIRRECIONES: DASH
+-X: ATAQUE NORMAL
+-C: ATAQUE ESPECIAL
+-X + C: ESPECIAL DEFENSIVO
+[i](INVULNERABLE; SE PUEDE USAR SI ESTAS HERIDO)[/i]\n
+[u]*EX - CONSUMEN MANA*[/u]
+-ARRIBA + C: PROYECTIL
+-X + C + ABAJO: SUPER ESPECIAL DEFENSIVO
+[i](INVULNERABLE; SE PUEDE USAR SI ESTAS HERIDO)[/i]
+-DOBLE TAP + C: SUPER DASH
+[i](INVULNERABLE; DAÑA ENEMIGOS)[/i]\n
+[u]*COMBOS*[/u]
+X X X: COMBO NORMAL
+X X C: COMBO NORMAL 2
+X X (ABAJO+X+C): COMBO ESPECIAL
+X X C (ARRIBA+C): COMBO ESPECIAL 2\n
+[i][u]*TIPS*[/u]
+-UTILIZA EL DASH PARA ESQUIVAR PROYECTILES
+-CONTINÚA TUS COMBOS PEGANDO ENEMIGOS POR LA PARED
+-COMBINA DIFERENTES ATAQUES PARA MAXIMIZAR EL DAÑO
+-NO DESPERDICIES COMIDA QUE NO NECESITES
+[/i]";"[u]MOVELIST:[/u]\n
+[u]*NORMALS*[/u]
+-DOUBLE TAP ARROW KEYS: DASH
+-X: JAB
+-C: CANE SMASH
+-X + C: DEFENSIVE SPECIAL
+[i](INVULNERABLE; CAN BE USED IN HITSTUN)[/i]\n
+[u]*EX - CONSUME MANA*[/u]
+-UP + C: PROJECTILE
+-X + C + DOWN: SUPER DEFENSIVE SPECIAL
+[i](INVULNERABLE; CAN BE USED IN HITSTUN)[/i]
+-DASH + C: SUPER DASH
+[i](INVULNERABLE; DEALS DAMAGE)[/i]\n
+[u]*COMBOS*[/u]
+X X X: COMBO 1
+X X C: COMBO 2
+X X (DOWN+X+C): SPECIAL COMBO 1
+X X C (UP+C): SPECIAL COMBO 2\n
+[i][u]*TIPS*[/u]
+-USE THE DASH TO AVOID PROJECTILES
+-BOUNCE ENEMIES OFF WALLS TO CONTINUE YOUR COMBO
+-MAXIMIZE DAMAGE USING DIFFERENT ATTACKS
+-DON'T WASTE FOOD YOU DON'T NEED
+[/i]"
+game_dead_title;MUERTO!;DEAD!
+game_win_title;GANASTE!;YOU WIN!
+game_btn_retry;REINTENTAR;RETRY
+main_title;"TUKE
+Un Juego por: Maxi Bareiro";"TUKE
+A game by: Maxi Bareiro"

@@ -1,0 +1,97 @@
+[gd_scene load_steps=15 format=3 uid="uid://du64g6irm2eoj"]
+
+[ext_resource type="PackedScene" uid="uid://byuf2pqoxmwxq" path="res://stageAssets/enemy.tscn" id="1_p0yc7"]
+[ext_resource type="Script" path="res://entities/Pyche/pyche.gd" id="2_r0auh"]
+[ext_resource type="Texture2D" uid="uid://clft6bg0kehyk" path="res://sprites/pyche/hurt/pixil-frame-0.png" id="3_xbv4n"]
+[ext_resource type="Texture2D" uid="uid://byo6pqym237rf" path="res://sprites/pyche/hurt/pixil-frame-1.png" id="4_f4xoe"]
+[ext_resource type="Texture2D" uid="uid://c730ug1p4kxtj" path="res://sprites/pyche/rest/pixil-frame-0.png" id="5_g186c"]
+[ext_resource type="Texture2D" uid="uid://ckmbi3yxmgkis" path="res://sprites/pyche/rest/pixil-frame-1.png" id="6_8w00g"]
+[ext_resource type="Texture2D" uid="uid://b2eoqc2p835ld" path="res://sprites/pyche/walk/pixil-frame-0.png" id="7_4k5t2"]
+[ext_resource type="Texture2D" uid="uid://cjgfg22vln6pc" path="res://sprites/pyche/walk/pixil-frame-1.png" id="8_mjw16"]
+[ext_resource type="Texture2D" uid="uid://d203sxhf33sep" path="res://sprites/pyche/walk/pixil-frame-2.png" id="9_qds15"]
+[ext_resource type="Texture2D" uid="uid://dsf8c6l2v3slj" path="res://sprites/pyche/walk/pixil-frame-3.png" id="10_axgvk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2561c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_xbv4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f4xoe")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_g186c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8w00g")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_4k5t2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mjw16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qds15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_axgvk")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hbkgt"]
+size = Vector2(23.4, 9.4)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sc52p"]
+size = Vector2(5.47827, 15.0412)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jw726"]
+size = Vector2(13.6, 6)
+
+[node name="Pyche" instance=ExtResource("1_p0yc7")]
+scale = Vector2(5, 5)
+collision_mask = 9
+script = ExtResource("2_r0auh")
+health = 25
+damage = 3
+speed = 600.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0.4, -5)
+sprite_frames = SubResource("SpriteFrames_2561c")
+animation = &"walk"
+
+[node name="slap" type="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(1.1, 6.7)
+shape = SubResource("RectangleShape2D_hbkgt")
+disabled = true
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="hitstun" parent="." index="2"]
+wait_time = 1.5
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2(4.64912e-07, -3.19847)
+rotation = -3.14159
+scale = Vector2(3.28571, 2.5)
+shape = SubResource("RectangleShape2D_sc52p")
+disabled = true
+debug_color = Color(3.1285e-06, 0.647214, 0.217155, 0.42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="5"]
+position = Vector2(0.2, 13.2)
+shape = SubResource("RectangleShape2D_jw726")

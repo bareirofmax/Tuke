@@ -1,0 +1,177 @@
+[gd_scene load_steps=28 format=3 uid="uid://dd2q70df4jlkr"]
+
+[ext_resource type="PackedScene" uid="uid://byuf2pqoxmwxq" path="res://stageAssets/enemy.tscn" id="1_sot6s"]
+[ext_resource type="Texture2D" uid="uid://codx0asvjmfbk" path="res://sprites/panza/slap/pixil-frame-0.png" id="2_d3umc"]
+[ext_resource type="Script" path="res://entities/Panza/panza.gd" id="2_nju4e"]
+[ext_resource type="Texture2D" uid="uid://degmn8j7kubm6" path="res://sprites/panza/slap/pixil-frame-1.png" id="3_3c4yh"]
+[ext_resource type="Shader" uid="uid://cw4xpyt7btb64" path="res://entities/palleteshader.tres" id="3_ig5a2"]
+[ext_resource type="Texture2D" uid="uid://ppdmv1u4emq3" path="res://sprites/panza/slap/pixil-frame-2.png" id="4_hdip1"]
+[ext_resource type="Texture2D" uid="uid://5up3xrh6a2ui" path="res://sprites/panza/hurt/pixil-frame-0.png" id="5_42pal"]
+[ext_resource type="Texture2D" uid="uid://hkx2tsj7dnl8" path="res://sprites/panza/pallete/palPanza0.png" id="5_qn6r8"]
+[ext_resource type="Texture2D" uid="uid://bpcse6bdyhytq" path="res://sprites/panza/hurt/pixil-frame-1.png" id="6_bisi8"]
+[ext_resource type="Texture2D" uid="uid://cao76nlmd0osh" path="res://sprites/panza/idle/pixil-frame-0.png" id="7_vtpkg"]
+[ext_resource type="Texture2D" uid="uid://cgoepdhfo33lm" path="res://sprites/panza/idle/pixil-frame-1.png" id="8_1qovy"]
+[ext_resource type="Texture2D" uid="uid://m17kq4l0bb4k" path="res://sprites/panza/idle/pixil-frame-2.png" id="9_yd7uy"]
+[ext_resource type="Texture2D" uid="uid://b3vvlc7ltf3hw" path="res://sprites/panza/idle/pixil-frame-3.png" id="10_87lel"]
+[ext_resource type="Texture2D" uid="uid://bsvno107mrfda" path="res://sprites/panza/walk/pixil-frame-0.png" id="11_ocgm6"]
+[ext_resource type="Texture2D" uid="uid://orm013n56kyy" path="res://sprites/panza/walk/pixil-frame-1.png" id="12_vd4q1"]
+[ext_resource type="Texture2D" uid="uid://1t1nprxaycho" path="res://sprites/panza/termo/pixil-frame-1.png" id="12_xm4br"]
+[ext_resource type="Texture2D" uid="uid://clyoi8udv0fcn" path="res://sprites/panza/termo/pixil-frame-2.png" id="13_tpkq0"]
+[ext_resource type="Texture2D" uid="uid://bh50n1biipaeg" path="res://sprites/panza/walk/pixil-frame-2.png" id="13_uhk8m"]
+[ext_resource type="Texture2D" uid="uid://boismx57y78i6" path="res://sprites/panza/termo/pixil-frame-3.png" id="14_w6klg"]
+[ext_resource type="Texture2D" uid="uid://b3ofslxwdk5vd" path="res://sprites/panza/termo/pixil-frame-4.png" id="15_iv4xk"]
+[ext_resource type="Texture2D" uid="uid://c57uhwy0nfqqr" path="res://sprites/panza/termo/pixil-frame-5.png" id="16_vwubo"]
+[ext_resource type="Texture2D" uid="uid://dudjnypc2yc2v" path="res://sprites/panza/termo/pixil-frame-6.png" id="17_g0wuq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_36hv6"]
+resource_local_to_scene = true
+shader = ExtResource("3_ig5a2")
+shader_parameter/ColorCount = 12
+shader_parameter/original = ExtResource("5_qn6r8")
+shader_parameter/new = ExtResource("5_qn6r8")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hcxny"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_42pal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bisi8")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_vtpkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1qovy")
+}, {
+"duration": 0.5,
+"texture": ExtResource("9_yd7uy")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_87lel")
+}, {
+"duration": 0.5,
+"texture": ExtResource("9_yd7uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1qovy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_d3umc")
+}, {
+"duration": 0.2,
+"texture": ExtResource("3_3c4yh")
+}, {
+"duration": 0.5,
+"texture": ExtResource("4_hdip1")
+}, {
+"duration": 4.0,
+"texture": ExtResource("4_hdip1")
+}],
+"loop": false,
+"name": &"slap",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_xm4br")
+}, {
+"duration": 0.25,
+"texture": ExtResource("13_tpkq0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("14_w6klg")
+}, {
+"duration": 0.2,
+"texture": ExtResource("15_iv4xk")
+}, {
+"duration": 0.1,
+"texture": ExtResource("16_vwubo")
+}, {
+"duration": 4.0,
+"texture": ExtResource("17_g0wuq")
+}],
+"loop": false,
+"name": &"termo",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_ocgm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vd4q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_uhk8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vd4q1")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aojll"]
+size = Vector2(19.45, 19.55)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t23wg"]
+size = Vector2(6.14783, 8.56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w08kl"]
+size = Vector2(13.6, 6)
+
+[node name="Panza" instance=ExtResource("1_sot6s")]
+scale = Vector2(5, 5)
+collision_mask = 9
+script = ExtResource("2_nju4e")
+health = 60
+damage = 2
+speed = 200.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+material = SubResource("ShaderMaterial_36hv6")
+position = Vector2(0.4, -5)
+sprite_frames = SubResource("SpriteFrames_hcxny")
+animation = &"termo"
+frame = 5
+frame_progress = 1.0
+
+[node name="slap" type="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(11.325, -1.775)
+shape = SubResource("RectangleShape2D_aojll")
+disabled = true
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="hitstun" parent="." index="2"]
+wait_time = 1.3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2(0.0999996, 1.5)
+rotation = -3.14159
+scale = Vector2(3.28571, 2.5)
+shape = SubResource("RectangleShape2D_t23wg")
+disabled = true
+debug_color = Color(3.1285e-06, 0.647214, 0.217155, 0.42)
+
+[node name="Left" type="Marker2D" parent="." index="5"]
+position = Vector2(-7.4, -2.8)
+
+[node name="Right" type="Marker2D" parent="." index="6"]
+position = Vector2(11.4, -1.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="7"]
+position = Vector2(0.2, 13.2)
+shape = SubResource("RectangleShape2D_w08kl")

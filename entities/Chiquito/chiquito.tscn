@@ -1,0 +1,310 @@
+[gd_scene load_steps=34 format=3 uid="uid://c4ijj0n3trlfd"]
+
+[ext_resource type="PackedScene" uid="uid://byuf2pqoxmwxq" path="res://stageAssets/enemy.tscn" id="1_qxjwi"]
+[ext_resource type="Script" path="res://entities/Chiquito/chiquito.gd" id="2_vh5ok"]
+[ext_resource type="Texture2D" uid="uid://b24ed5hw5ycr0" path="res://sprites/chiquito/masarriba/pixil-frame-0.png" id="3_6wl3m"]
+[ext_resource type="Texture2D" uid="uid://cgchsvtkghlor" path="res://sprites/chiquito/masarriba/pixil-frame-1.png" id="3_j1l3t"]
+[ext_resource type="Texture2D" uid="uid://dno7yd7jaw66n" path="res://sprites/chiquito/masarriba/pixil-frame-2.png" id="4_0drhr"]
+[ext_resource type="Texture2D" uid="uid://ci5ddljtl4578" path="res://sprites/chiquito/masidle/pixil-frame-0.png" id="5_dptbp"]
+[ext_resource type="Texture2D" uid="uid://dh1y4wihbjo5c" path="res://sprites/chiquito/masidle/pixil-frame-1.png" id="6_dwvs6"]
+[ext_resource type="Texture2D" uid="uid://bcvlhr1fseb43" path="res://sprites/chiquito/masarriba/pixil-frame-3.png" id="6_rmquo"]
+[ext_resource type="Texture2D" uid="uid://iovrrd0pek7q" path="res://sprites/chiquito/masarriba/pixil-frame-4.png" id="7_cyapm"]
+[ext_resource type="Texture2D" uid="uid://30kx5p0vhmie" path="res://sprites/chiquito/masidle/pixil-frame-2.png" id="7_m15sw"]
+[ext_resource type="Texture2D" uid="uid://jr0gnu5vov4k" path="res://sprites/chiquito/masidle/pixil-frame-3.png" id="8_2cy73"]
+[ext_resource type="Texture2D" uid="uid://bpehvl752qygt" path="res://sprites/chiquito/masarriba/pixil-frame-5.png" id="8_da4qp"]
+[ext_resource type="Texture2D" uid="uid://jnv8nj4nq2us" path="res://sprites/chiquito/masidle/pixil-frame-4.png" id="9_8ppki"]
+[ext_resource type="Texture2D" uid="uid://b6j4h2j55ys8b" path="res://sprites/chiquito/masarriba/pixil-frame-6.png" id="9_ssi7s"]
+[ext_resource type="Texture2D" uid="uid://nvau7471yu7f" path="res://sprites/chiquito/masarriba/pixil-frame-7.png" id="10_0od8y"]
+[ext_resource type="Texture2D" uid="uid://d3hua7wliy5wo" path="res://sprites/chiquito/masidle/pixil-frame-5.png" id="10_2tx16"]
+[ext_resource type="Texture2D" uid="uid://cbi4b8rtjis5t" path="res://sprites/chiquito/mascharge/pixil-frame-2.png" id="12_vxxox"]
+[ext_resource type="Texture2D" uid="uid://b2jrm4l5rh08d" path="res://sprites/chiquito/mascharge/pixil-frame-3.png" id="13_vp1hn"]
+[ext_resource type="Texture2D" uid="uid://niqfoc3j5xea" path="res://sprites/chiquito/mascharge/pixil-frame-4.png" id="14_rxkmo"]
+[ext_resource type="Texture2D" uid="uid://c5lhc8ai3w6uw" path="res://sprites/chiquito/mascharge/pixil-frame-5.png" id="15_1a5ae"]
+[ext_resource type="Texture2D" uid="uid://bckt16ev5t6kv" path="res://sprites/chiquito/mascharge/pixil-frame-6.png" id="16_cp81p"]
+[ext_resource type="Texture2D" uid="uid://dm5nrdnp41clb" path="res://sprites/chiquito/mascharge/pixil-frame-7.png" id="17_vb6rm"]
+[ext_resource type="Texture2D" uid="uid://5775g3i1tfwm" path="res://sprites/chiquito/maswalk/pixil-frame-0.png" id="18_i1t04"]
+[ext_resource type="Texture2D" uid="uid://bjippcokjxdeo" path="res://sprites/chiquito/maswalk/pixil-frame-1.png" id="19_df50f"]
+[ext_resource type="Texture2D" uid="uid://cw7f3xq1ar4q3" path="res://sprites/chiquito/maswalk/pixil-frame-2.png" id="20_g2gei"]
+[ext_resource type="Texture2D" uid="uid://bsamfad6db6yb" path="res://sprites/chiquito/maswalk/pixil-frame-3.png" id="21_q8mkl"]
+[ext_resource type="Texture2D" uid="uid://3132q56fdtxg" path="res://sprites/chiquito/maswalk/pixil-frame-4.png" id="22_4jupr"]
+
+[sub_resource type="Curve" id="Curve_wwt14"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.567416, 0.021978), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_plki1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_vxxox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vp1hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rxkmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rxkmo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("14_rxkmo")
+}, {
+"duration": 0.5,
+"texture": ExtResource("14_rxkmo")
+}, {
+"duration": 0.1,
+"texture": ExtResource("15_1a5ae")
+}, {
+"duration": 4.0,
+"texture": ExtResource("16_cp81p")
+}, {
+"duration": 2.0,
+"texture": ExtResource("16_cp81p")
+}, {
+"duration": 8.0,
+"texture": ExtResource("17_vb6rm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vb6rm")
+}],
+"loop": false,
+"name": &"fast",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_6wl3m")
+}, {
+"duration": 2.0,
+"texture": ExtResource("3_j1l3t")
+}, {
+"duration": 1.5,
+"texture": ExtResource("4_0drhr")
+}, {
+"duration": 0.1,
+"texture": ExtResource("6_rmquo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cyapm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_da4qp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ssi7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0od8y")
+}],
+"loop": false,
+"name": &"ganar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_j1l3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0drhr")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_dptbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dwvs6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m15sw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2cy73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8ppki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2tx16")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_vxxox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vxxox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vp1hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rxkmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1a5ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cp81p")
+}, {
+"duration": 12.0,
+"texture": ExtResource("17_vb6rm")
+}],
+"loop": false,
+"name": &"slap",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_vxxox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vp1hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rxkmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vp1hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_vxxox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vp1hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rxkmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vp1hn")
+}, {
+"duration": 0.1,
+"texture": ExtResource("15_1a5ae")
+}, {
+"duration": 4.0,
+"texture": ExtResource("16_cp81p")
+}, {
+"duration": 2.0,
+"texture": ExtResource("16_cp81p")
+}, {
+"duration": 8.0,
+"texture": ExtResource("17_vb6rm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vb6rm")
+}],
+"loop": false,
+"name": &"throw",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_i1t04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_df50f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_g2gei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_q8mkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4jupr")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbhkx"]
+size = Vector2(16.9625, 13)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdvyv"]
+size = Vector2(4.26087, 10.6412)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_er3qg"]
+size = Vector2(13.6, 6)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gnxk6"]
+font_size = 10
+
+[node name="Chiquito" instance=ExtResource("1_qxjwi")]
+scale = Vector2(5, 5)
+collision_mask = 9
+script = ExtResource("2_vh5ok")
+health = 250
+damage = 10
+speed = 200.0
+
+[node name="ExBurst" type="CPUParticles2D" parent="." index="0"]
+position = Vector2(1, -7)
+emitting = false
+amount = 18
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+fixed_fps = 60
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 125.0
+initial_velocity_max = 200.0
+angular_velocity_min = 150.0
+angular_velocity_max = 300.0
+scale_amount_min = 20.0
+scale_amount_max = 25.0
+scale_amount_curve = SubResource("Curve_wwt14")
+color = Color(1, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
+position = Vector2(0.4, -5)
+sprite_frames = SubResource("SpriteFrames_plki1")
+animation = &"fast"
+
+[node name="slap" type="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(11.5188, -4.5)
+shape = SubResource("RectangleShape2D_sbhkx")
+disabled = true
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="hitstun" parent="." index="3"]
+wait_time = 1.5
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hitbox" index="1"]
+position = Vector2(1.99999, 2.30151)
+rotation = -3.14159
+scale = Vector2(3.28571, 2.5)
+shape = SubResource("RectangleShape2D_wdvyv")
+disabled = true
+debug_color = Color(3.1285e-06, 0.647214, 0.217155, 0.42)
+
+[node name="Left" type="Marker2D" parent="." index="7"]
+position = Vector2(-10, -5)
+
+[node name="Right" type="Marker2D" parent="." index="8"]
+position = Vector2(11, -5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="9"]
+position = Vector2(2, 14)
+shape = SubResource("RectangleShape2D_er3qg")
+
+[node name="Label" type="Label" parent="." index="10"]
+visible = false
+offset_left = -29.0
+offset_top = -35.0
+offset_right = 41.0
+offset_bottom = -18.0
+text = "A GANAR!"
+label_settings = SubResource("LabelSettings_gnxk6")
+horizontal_alignment = 1
+vertical_alignment = 1

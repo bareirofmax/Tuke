@@ -1,0 +1,177 @@
+[gd_scene load_steps=28 format=3 uid="uid://ci4tmntyl40rh"]
+
+[ext_resource type="PackedScene" uid="uid://byuf2pqoxmwxq" path="res://stageAssets/enemy.tscn" id="1_ekhdq"]
+[ext_resource type="Texture2D" uid="uid://7tqa3n4ywni0" path="res://sprites/football/fheadbutt/pixil-frame-1.png" id="2_7cug6"]
+[ext_resource type="Script" path="res://entities/Olimpio/olimpio.gd" id="2_eb1bl"]
+[ext_resource type="Texture2D" uid="uid://fx3j6x8lhkah" path="res://sprites/football/fheadbutt/pixil-frame-2.png" id="3_10ya8"]
+[ext_resource type="Shader" uid="uid://cw4xpyt7btb64" path="res://entities/palleteshader.tres" id="3_hfs2q"]
+[ext_resource type="Texture2D" uid="uid://brjglpoc3peev" path="res://sprites/football/fheadbutt/pixil-frame-3.png" id="4_f6uur"]
+[ext_resource type="Texture2D" uid="uid://cqrlrmtrr7k2w" path="res://sprites/football/pallete/palOlimpio0.png" id="4_gmowq"]
+[ext_resource type="Texture2D" uid="uid://dmyjhkj6lcdx0" path="res://sprites/football/fheadbutt/pixil-frame-4.png" id="5_vsgyf"]
+[ext_resource type="Texture2D" uid="uid://c152a56uifio4" path="res://sprites/football/fheadbutt/pixil-frame-5.png" id="6_7gofp"]
+[ext_resource type="Texture2D" uid="uid://dx8sd5xh2jgtu" path="res://sprites/football/fhurt/pixil-frame-1.png" id="7_vstpx"]
+[ext_resource type="Texture2D" uid="uid://yd043c0tok76" path="res://sprites/football/fhurt/pixil-frame-0.png" id="8_h2drk"]
+[ext_resource type="Texture2D" uid="uid://dif8x1ppmmw7w" path="res://sprites/football/fidle/pixil-frame-0.png" id="9_x7b1m"]
+[ext_resource type="Texture2D" uid="uid://bexj32reyhp7n" path="res://sprites/football/fidle/pixil-frame-1.png" id="10_2hsbs"]
+[ext_resource type="Texture2D" uid="uid://mycr0tttag6k" path="res://sprites/football/fidle/pixil-frame-2.png" id="11_8vg8t"]
+[ext_resource type="Texture2D" uid="uid://peq7bk6l370v" path="res://sprites/football/fkick/pixil-frame-1.png" id="12_1qx17"]
+[ext_resource type="Texture2D" uid="uid://dvickp2imy5er" path="res://sprites/football/fkick/pixil-frame-2.png" id="13_lcg6k"]
+[ext_resource type="Texture2D" uid="uid://cdimk6vldlbs4" path="res://sprites/football/fkick/pixil-frame-3.png" id="14_wvjbu"]
+[ext_resource type="Texture2D" uid="uid://dvvn5ck7g6ohy" path="res://sprites/football/fkick/pixil-frame-4.png" id="15_7ubhi"]
+[ext_resource type="Texture2D" uid="uid://sxe7uge1gfxm" path="res://sprites/football/fwalk/pixil-frame-0.png" id="16_1acgl"]
+[ext_resource type="Texture2D" uid="uid://bpg6al3utfm1h" path="res://sprites/football/fwalk/pixil-frame-1.png" id="17_38mjk"]
+[ext_resource type="Texture2D" uid="uid://cweptljqovy1y" path="res://sprites/football/fwalk/pixil-frame-2.png" id="18_dgik1"]
+[ext_resource type="Texture2D" uid="uid://c07ltdbdtv1x3" path="res://sprites/football/fwalk/pixil-frame-3.png" id="19_jwh27"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e4pfc"]
+resource_local_to_scene = true
+shader = ExtResource("3_hfs2q")
+shader_parameter/ColorCount = 7
+shader_parameter/original = ExtResource("4_gmowq")
+shader_parameter/new = ExtResource("4_gmowq")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rtx3g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7cug6")
+}, {
+"duration": 0.25,
+"texture": ExtResource("3_10ya8")
+}, {
+"duration": 10.0,
+"texture": ExtResource("4_f6uur")
+}, {
+"duration": 0.25,
+"texture": ExtResource("5_vsgyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7gofp")
+}, {
+"duration": 5.0,
+"texture": ExtResource("6_7gofp")
+}],
+"loop": false,
+"name": &"headbutt",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_vstpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h2drk")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_x7b1m")
+}, {
+"duration": 0.75,
+"texture": ExtResource("10_2hsbs")
+}, {
+"duration": 3.0,
+"texture": ExtResource("11_8vg8t")
+}, {
+"duration": 0.75,
+"texture": ExtResource("10_2hsbs")
+}, {
+"duration": 1.25,
+"texture": ExtResource("9_x7b1m")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("12_1qx17")
+}, {
+"duration": 5.0,
+"texture": ExtResource("13_lcg6k")
+}, {
+"duration": 0.5,
+"texture": ExtResource("14_wvjbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7ubhi")
+}, {
+"duration": 3.0,
+"texture": ExtResource("15_7ubhi")
+}],
+"loop": false,
+"name": &"kick",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_1acgl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_38mjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dgik1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jwh27")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pjx0"]
+size = Vector2(15, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0jg1k"]
+size = Vector2(18, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r6hal"]
+size = Vector2(4.13914, 8.9625)
+
+[node name="Olimpio" instance=ExtResource("1_ekhdq")]
+scale = Vector2(5, 5)
+collision_mask = 9
+script = ExtResource("2_eb1bl")
+health = 18
+damage = 3
+speed = 250.0
+
+[node name="HeadRight" type="Marker2D" parent="." index="0"]
+position = Vector2(6.8, -0.4)
+
+[node name="HeadLeft" type="Marker2D" parent="." index="1"]
+position = Vector2(-7, 2.98023e-08)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="2"]
+material = SubResource("ShaderMaterial_e4pfc")
+sprite_frames = SubResource("SpriteFrames_rtx3g")
+animation = &"headbutt"
+frame = 5
+frame_progress = 1.0
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="3"]
+position = Vector2(0.2, 13)
+shape = SubResource("RectangleShape2D_1pjx0")
+
+[node name="head" type="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(6.8, -0.4)
+shape = SubResource("RectangleShape2D_0jg1k")
+disabled = true
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2(1.4, 1.20313)
+rotation = -3.14159
+scale = Vector2(3.28571, 2.5)
+shape = SubResource("RectangleShape2D_r6hal")
+disabled = true
+debug_color = Color(3.1285e-06, 0.647214, 0.217155, 0.42)
+
+[node name="AudioStreamPlayer2D" parent="." index="8"]
+max_polyphony = 5

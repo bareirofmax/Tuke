@@ -1,0 +1,166 @@
+[gd_scene load_steps=29 format=3 uid="uid://ckj4dpeovny2m"]
+
+[ext_resource type="Script" path="res://entities/Lynx/lynx.gd" id="1_82qip"]
+[ext_resource type="PackedScene" uid="uid://byuf2pqoxmwxq" path="res://stageAssets/enemy.tscn" id="1_faaap"]
+[ext_resource type="Shader" uid="uid://cw4xpyt7btb64" path="res://entities/palleteshader.tres" id="2_5mdxs"]
+[ext_resource type="Texture2D" uid="uid://b0i5jawry0blv" path="res://sprites/lynx/lynxhurt/pixil-frame-0.png" id="2_6jqsi"]
+[ext_resource type="Texture2D" uid="uid://cykuf8a3plya6" path="res://sprites/lynx/pallete/palLynx0.png" id="3_iob2a"]
+[ext_resource type="Texture2D" uid="uid://djnmqr6jprm0p" path="res://sprites/lynx/lynxhurt/pixil-frame-1.png" id="3_wojqg"]
+[ext_resource type="Texture2D" uid="uid://biouo45f5vu2p" path="res://sprites/lynx/lynxidle/pixil-frame-0.png" id="4_eo2gb"]
+[ext_resource type="Texture2D" uid="uid://bb8o5o30r13qn" path="res://sprites/lynx/lynxidle/pixil-frame-1.png" id="5_ludru"]
+[ext_resource type="Texture2D" uid="uid://drr4y30qcykb2" path="res://sprites/lynx/lynxidle/pixil-frame-2.png" id="6_n4x8a"]
+[ext_resource type="Texture2D" uid="uid://cppl6d4cp2ili" path="res://sprites/lynx/lynxidle/pixil-frame-3.png" id="7_e3hjq"]
+[ext_resource type="Texture2D" uid="uid://20oavsm3ajpw" path="res://sprites/lynx/lynxidle/pixil-frame-4.png" id="8_4tqm5"]
+[ext_resource type="Texture2D" uid="uid://y30wj34r38fc" path="res://sprites/lynx/lynxslap/pixil-frame-0.png" id="8_m2a6j"]
+[ext_resource type="Texture2D" uid="uid://qhqpc3xhb8ml" path="res://sprites/lynx/lynxslap/pixil-frame-1.png" id="9_5ye8j"]
+[ext_resource type="Texture2D" uid="uid://dejf5qi4hu8eo" path="res://sprites/lynx/lynxslap/pixil-frame-2.png" id="10_8ufyi"]
+[ext_resource type="Texture2D" uid="uid://btktajsvhm2mg" path="res://sprites/lynx/lynxgun/pixil-frame-0.png" id="11_pw5mo"]
+[ext_resource type="Texture2D" uid="uid://d1iuavsev6jfh" path="res://sprites/lynx/lynxgun/pixil-frame-1.png" id="12_4xej8"]
+[ext_resource type="Texture2D" uid="uid://s253x6k6gsa4" path="res://sprites/lynx/lynxgun/pixil-frame-2.png" id="13_3ahof"]
+[ext_resource type="Texture2D" uid="uid://b5kscvq54i0su" path="res://sprites/lynx/lynxgun/pixil-frame-3.png" id="14_cb17c"]
+[ext_resource type="Texture2D" uid="uid://c4cyjg7omsbeb" path="res://sprites/lynx/lynxgun/pixil-frame-4.png" id="15_cryst"]
+[ext_resource type="Texture2D" uid="uid://dl5gi8f824w7a" path="res://sprites/lynx/lynxwalk/pixil-frame-0.png" id="16_rybhx"]
+[ext_resource type="Texture2D" uid="uid://cc83rwo7dpt6u" path="res://sprites/lynx/lynxwalk/pixil-frame-1.png" id="17_b1xj6"]
+[ext_resource type="Texture2D" uid="uid://bd40shc5gvt50" path="res://sprites/lynx/lynxwalk/pixil-frame-2.png" id="18_tt48a"]
+[ext_resource type="Texture2D" uid="uid://dxjqqcuryrc8a" path="res://sprites/lynx/lynxwalk/pixil-frame-3.png" id="19_uveh5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5cy37"]
+resource_local_to_scene = true
+shader = ExtResource("2_5mdxs")
+shader_parameter/ColorCount = 10
+shader_parameter/original = ExtResource("3_iob2a")
+shader_parameter/new = ExtResource("3_iob2a")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cppc4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6jqsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wojqg")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_eo2gb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ludru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_n4x8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_e3hjq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4tqm5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_m2a6j")
+}, {
+"duration": 0.2,
+"texture": ExtResource("9_5ye8j")
+}, {
+"duration": 4.0,
+"texture": ExtResource("10_8ufyi")
+}],
+"loop": false,
+"name": &"slap",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("11_pw5mo")
+}, {
+"duration": 0.1,
+"texture": ExtResource("12_4xej8")
+}, {
+"duration": 12.0,
+"texture": ExtResource("13_3ahof")
+}, {
+"duration": 0.1,
+"texture": ExtResource("14_cb17c")
+}, {
+"duration": 4.0,
+"texture": ExtResource("15_cryst")
+}],
+"loop": false,
+"name": &"throw",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_rybhx")
+}, {
+"duration": 0.5,
+"texture": ExtResource("17_b1xj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tt48a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_uveh5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmrq6"]
+size = Vector2(23.825, 5.8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0snnm"]
+size = Vector2(5.47827, 12.2412)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u7xkg"]
+size = Vector2(13.6, 6)
+
+[node name="Lynx" instance=ExtResource("1_faaap")]
+scale = Vector2(5, 5)
+collision_mask = 9
+script = ExtResource("1_82qip")
+health = 40
+damage = 4
+speed = 300.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+material = SubResource("ShaderMaterial_5cy37")
+position = Vector2(0.4, -5)
+sprite_frames = SubResource("SpriteFrames_cppc4")
+animation = &"slap"
+frame = 2
+frame_progress = 1.0
+
+[node name="slap" type="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(7.2, -4.8)
+shape = SubResource("RectangleShape2D_tmrq6")
+disabled = true
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2(-8.40818e-06, 0.301512)
+rotation = -3.14159
+scale = Vector2(3.28571, 2.5)
+shape = SubResource("RectangleShape2D_0snnm")
+disabled = true
+debug_color = Color(3.1285e-06, 0.647214, 0.217155, 0.42)
+
+[node name="Left" type="Marker2D" parent="." index="5"]
+position = Vector2(-6.8, -4.4)
+
+[node name="Right" type="Marker2D" parent="." index="6"]
+position = Vector2(7.2, -4.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="7"]
+position = Vector2(0.2, 13.2)
+shape = SubResource("RectangleShape2D_u7xkg")

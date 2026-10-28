@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8dmpv8evugad"]
+
+[ext_resource type="Script" path="res://entities/Fireball/fireball.gd" id="1_nl0m1"]
+[ext_resource type="Texture2D" uid="uid://b4akl6s3e0hgh" path="res://sprites/football/fireball/pixil-frame-4.png" id="1_t0c00"]
+[ext_resource type="AudioStream" uid="uid://b0peo5ygkk8mv" path="res://sounds/punch.mp3" id="3_kudj5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_emitc"]
+size = Vector2(2.5, 6.66667)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m0mfw"]
+size = Vector2(5.66667, 6.16667)
+
+[node name="fireball" type="CharacterBody2D"]
+scale = Vector2(6, 6)
+collision_layer = 0
+collision_mask = 9
+script = ExtResource("1_nl0m1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(1.1875, 1.15625)
+texture = ExtResource("1_t0c00")
+
+[node name="hurtbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
+position = Vector2(0, 0.499999)
+shape = SubResource("RectangleShape2D_emitc")
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.333333)
+shape = SubResource("RectangleShape2D_m0mfw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_kudj5")
+pitch_scale = 1.5
+max_polyphony = 5
+area_mask = 2
+
+[connection signal="area_entered" from="hurtbox" to="." method="_on_hurtbox_area_entered"]

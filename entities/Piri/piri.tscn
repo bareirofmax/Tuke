@@ -1,0 +1,170 @@
+[gd_scene load_steps=25 format=3 uid="uid://c58xo76dgkxfq"]
+
+[ext_resource type="PackedScene" uid="uid://byuf2pqoxmwxq" path="res://stageAssets/enemy.tscn" id="1_ih1wo"]
+[ext_resource type="Script" path="res://entities/Piri/piri.gd" id="2_p3ogn"]
+[ext_resource type="Texture2D" uid="uid://cip1bib86koim" path="res://sprites/piri/hurt/pixil-frame-0.png" id="3_utffe"]
+[ext_resource type="Texture2D" uid="uid://on7anw2yesvo" path="res://sprites/piri/hurt/pixil-frame-1.png" id="4_63quk"]
+[ext_resource type="Texture2D" uid="uid://bpo5hu7biset2" path="res://sprites/piri/idle/pixil-frame-0.png" id="5_c1m1a"]
+[ext_resource type="Texture2D" uid="uid://bwi272snjktny" path="res://sprites/piri/idle/pixil-frame-1.png" id="6_uqr1h"]
+[ext_resource type="Texture2D" uid="uid://y1h0xckwmfn0" path="res://sprites/piri/idle/pixil-frame-2.png" id="7_nqwb6"]
+[ext_resource type="Texture2D" uid="uid://c61i6wxixbs4x" path="res://sprites/piri/idle/pixil-frame-3.png" id="8_w1741"]
+[ext_resource type="Texture2D" uid="uid://cq0dmwcnrtxpw" path="res://sprites/piri/throw/pixil-frame-0.png" id="9_eex6d"]
+[ext_resource type="Texture2D" uid="uid://0vkohi0ctco2" path="res://sprites/piri/throw/pixil-frame-1.png" id="10_7hfny"]
+[ext_resource type="Texture2D" uid="uid://c65ghpx3uv6kr" path="res://sprites/piri/throw/pixil-frame-2.png" id="11_hmt3s"]
+[ext_resource type="Texture2D" uid="uid://cu4lxpvanv7h3" path="res://sprites/piri/throw/pixil-frame-3.png" id="12_3my5q"]
+[ext_resource type="Texture2D" uid="uid://j0xgrua41wwu" path="res://sprites/piri/throw/pixil-frame-4.png" id="13_a1ft6"]
+[ext_resource type="Texture2D" uid="uid://dvc42ext0kcqy" path="res://sprites/piri/throw/pixil-frame-5.png" id="14_fbwsg"]
+[ext_resource type="Texture2D" uid="uid://c8xi2rpi351ln" path="res://sprites/piri/throw/pixil-frame-6.png" id="15_s0dh8"]
+[ext_resource type="Texture2D" uid="uid://bq6l8hbuk1hkj" path="res://sprites/piri/throw/pixil-frame-7.png" id="16_eyrnf"]
+[ext_resource type="Texture2D" uid="uid://b6jxggjtvxaol" path="res://sprites/piri/throw/pixil-frame-8.png" id="17_pg5ww"]
+[ext_resource type="Texture2D" uid="uid://bd8xus71gqudc" path="res://sprites/piri/walk/pixil-frame-0.png" id="18_powxu"]
+[ext_resource type="Texture2D" uid="uid://c5lhfq5tp8amw" path="res://sprites/piri/walk/pixil-frame-1.png" id="19_351ue"]
+[ext_resource type="Texture2D" uid="uid://bymsrdwjkuuh0" path="res://sprites/piri/walk/pixil-frame-2.png" id="20_4yk41"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cppc4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_utffe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_63quk")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("5_c1m1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uqr1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nqwb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_w1741")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_eex6d")
+}, {
+"duration": 0.5,
+"texture": ExtResource("10_7hfny")
+}, {
+"duration": 0.5,
+"texture": ExtResource("11_hmt3s")
+}, {
+"duration": 0.25,
+"texture": ExtResource("12_3my5q")
+}, {
+"duration": 0.25,
+"texture": ExtResource("12_3my5q")
+}],
+"loop": false,
+"name": &"slap",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_eex6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7hfny")
+}, {
+"duration": 2.0,
+"texture": ExtResource("11_hmt3s")
+}, {
+"duration": 0.1,
+"texture": ExtResource("12_3my5q")
+}, {
+"duration": 3.0,
+"texture": ExtResource("13_a1ft6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_fbwsg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_s0dh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_eyrnf")
+}, {
+"duration": 0.1,
+"texture": ExtResource("17_pg5ww")
+}, {
+"duration": 5.0,
+"texture": ExtResource("9_eex6d")
+}],
+"loop": false,
+"name": &"throw",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_powxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_351ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_4yk41")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmrq6"]
+size = Vector2(21.85, 15.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0snnm"]
+size = Vector2(4.56522, 13.8412)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u7xkg"]
+size = Vector2(13.6, 6)
+
+[node name="Piri" instance=ExtResource("1_ih1wo")]
+scale = Vector2(5, 5)
+collision_mask = 9
+script = ExtResource("2_p3ogn")
+health = 40
+damage = 5
+speed = 150.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+position = Vector2(0.4, -5)
+sprite_frames = SubResource("SpriteFrames_cppc4")
+animation = &"slap"
+frame = 3
+frame_progress = 1.0
+
+[node name="slap" type="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2(10.125, -3.8)
+shape = SubResource("RectangleShape2D_tmrq6")
+disabled = true
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2(-1.1, -1.69848)
+rotation = -3.14159
+scale = Vector2(3.28571, 2.5)
+shape = SubResource("RectangleShape2D_0snnm")
+disabled = true
+debug_color = Color(3.1285e-06, 0.647214, 0.217155, 0.42)
+
+[node name="Left" type="Marker2D" parent="." index="5"]
+position = Vector2(-8, -2.2)
+
+[node name="Right" type="Marker2D" parent="." index="6"]
+position = Vector2(10, -3.8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="7"]
+position = Vector2(0.2, 13.2)
+shape = SubResource("RectangleShape2D_u7xkg")

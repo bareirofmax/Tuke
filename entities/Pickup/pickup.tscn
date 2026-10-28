@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://c61pee062nkqe"]
+
+[ext_resource type="Script" path="res://entities/Pickup/pickup.gd" id="1_ny1q7"]
+[ext_resource type="Texture2D" uid="uid://cgi8b5uctfegi" path="res://sprites/pickups/vendor.png" id="2_ewawl"]
+[ext_resource type="Texture2D" uid="uid://cqa404ctajvou" path="res://sprites/pickups/chipa.png" id="2_wrb28"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3muu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twtsf"]
+size = Vector2(14, 20)
+
+[sub_resource type="LabelSettings" id="LabelSettings_bt8wf"]
+font_size = 10
+
+[node name="pickup" type="CharacterBody2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_ny1q7")
+
+[node name="colorChange" type="Timer" parent="."]
+autostart = true
+
+[node name="vendedor" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2.4, -10.8)
+texture = ExtResource("2_ewawl")
+offset = Vector2(0, -0.4)
+flip_h = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.8, -0.1)
+texture = ExtResource("2_wrb28")
+offset = Vector2(0, -0.4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.8, -0.5)
+shape = SubResource("RectangleShape2D_w3muu")
+disabled = true
+
+[node name="GrabRange" type="Area2D" parent="."]
+position = Vector2(0.8, -0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrabRange"]
+position = Vector2(0, -9)
+shape = SubResource("RectangleShape2D_twtsf")
+debug_color = Color(0.703207, 0.272227, 1, 0.42)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -35.0
+offset_top = -33.0
+offset_right = 35.0
+offset_bottom = -16.0
+text = "10000 Gs."
+label_settings = SubResource("LabelSettings_bt8wf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="colorChange" to="." method="_on_color_change_timeout"]
